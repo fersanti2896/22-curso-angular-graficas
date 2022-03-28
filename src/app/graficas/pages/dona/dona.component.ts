@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { ChartData, ChartType } from 'chart.js';
+import { Component } from '@angular/core';
+import { ChartType } from 'chart.js';
 import { Color, Label, MultiDataSet } from 'ng2-charts';
 
 @Component({
@@ -9,6 +9,7 @@ import { Color, Label, MultiDataSet } from 'ng2-charts';
   ]
 })
 export class DonaComponent {
+  mensaje: string = 'Información de Instrumentos de Inversión!';
 
   public doughnutChartLabels: Label[] = [ 'CETES', 'Supertasas', 'Kubo Financiero', 'Finsus', 'GBM+' ];
   public doughnutChartData: MultiDataSet = [

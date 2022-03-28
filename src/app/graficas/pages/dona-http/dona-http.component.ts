@@ -10,7 +10,8 @@ import { GraficasService } from '../../services/graficas.service';
   ]
 })
 export class DonaHttpComponent implements OnInit {
-
+  mensaje: string = 'Información en billones de usuarios!';
+  
   public doughnutChartLabels: Label[] = [ 
     // 'CETES', 'Supertasas', 'Kubo Financiero', 'Finsus', 'GBM+'
   ];
